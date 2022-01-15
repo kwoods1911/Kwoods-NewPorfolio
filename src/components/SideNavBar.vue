@@ -11,7 +11,7 @@
             </router-link>
         </div>
             <router-link to="/">
-                <SideBarLink linkName="Introduction"/>
+                <SideBarLink linkName="Introduction" linkColor="red"/>
             </router-link>
             
             <router-link to='/experience'>

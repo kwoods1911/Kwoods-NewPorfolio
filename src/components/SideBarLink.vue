@@ -1,5 +1,5 @@
 <template>
-    <a :href="href">{{linkName}}</a>
+    <a :href="href" :style="{color: color}" v-on="{mouseover: changeTextColor, mouseout: resetTextColor}">{{linkName}}</a>
     <i class="fas fa-times"></i>
 </template>
 
@@ -12,14 +12,25 @@ export default {
         defaultColor: String,
         hoverColor:String,
         mouseOver: Boolean,
-        href: String
-
+        href: String,
+        linkColor: String,
     },
 
     data(){
         return {
             color: ''
         } 
+    },
+
+    methods: {
+        changeTextColor(){
+            this.color = this.linkColor;
+        },
+
+        resetTextColor(){
+            this.color = 'black'
+
+        }
     }
 
 }
