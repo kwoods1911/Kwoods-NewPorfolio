@@ -4,35 +4,36 @@
     <div class="sidebar">
         <div class="sidebar-header">
             <router-link to="/">
-                <h3>KHARI</h3>
-                <h3>WOODS</h3>
-                <h6>Software Developer</h6>
-
+                <Logo
+                firstName="KHARI"
+                lastName="WOODS"
+                jobTitle="Software Developer"
+                />
             </router-link>
         </div>
             <router-link to="/">
-                <SideBarLink linkName="Introduction" linkColor="red"/>
+                <SideBarLink linkName="Introduction" linkColor="red" imgpath="../assets/graduation-cap.png"/>
             </router-link>
             
             <router-link to='/experience'>
-                <SideBarLink linkName="Experience"/>
+                <SideBarLink linkName="Experience" linkColor="blue"/>
             </router-link>
             
             <router-link to='/projects'>
-                <SideBarLink linkName="Projects"/>
+                <SideBarLink linkName="Projects" linkColor="yellow"/>
             </router-link>
             
             <router-link to='/skills'>
-                <SideBarLink linkName="Skills"/>
+                <SideBarLink linkName="Skills" linkColor="green"/>
             </router-link>
             
 
             <router-link to='/contact'>
-                <SideBarLink linkName="Contact Me"/>
+                <SideBarLink linkName="Contact Me" linkColor="brown"/>
             </router-link>
             
             <router-link to='/about'>
-                <SideBarLink linkName="About Me"/>
+                <SideBarLink linkName="About Me" linkColor="cyan"/>
             </router-link>
             
     </div>
@@ -41,10 +42,12 @@
 
 <script>
 import SideBarLink from './SideBarLink.vue'
+import Logo from './Logo.vue'
 export default {
     name: 'SideNavBar',
     components: {
         SideBarLink,
+        Logo
     }
 }
 </script>

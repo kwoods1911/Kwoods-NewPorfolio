@@ -1,4 +1,8 @@
 <template>
+
+    <div>
+        <img :src="img" alt="">
+    </div>
     <a :href="href" :style="{color: color}" v-on="{mouseover: changeTextColor, mouseout: resetTextColor}">{{linkName}}</a>
     <i class="fas fa-times"></i>
 </template>
@@ -14,12 +18,18 @@ export default {
         mouseOver: Boolean,
         href: String,
         linkColor: String,
+        imgpath: String,
     },
 
     data(){
         return {
-            color: ''
+            color: '',
+            img: ''
         } 
+    },
+    mounted(){
+        this.img = this.imgpath
+        console.log(this.img)
     },
 
     methods: {
@@ -29,7 +39,6 @@ export default {
 
         resetTextColor(){
             this.color = 'black'
-
         }
     }
 
@@ -41,8 +50,13 @@ export default {
 .sidebar a {
   display: block;
   color: black;
-  padding: 16px;
+  padding: 12px;
   text-decoration: none;
+}
+
+img {
+    height:30px;
+    width:30px;
 }
 
 </style>
