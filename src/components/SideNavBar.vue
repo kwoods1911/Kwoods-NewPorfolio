@@ -4,24 +4,22 @@
     <div class="sidebar">
         <div class="sidebar-header">
             <router-link to="/">
-                <Logo
-                firstName="KHARI"
-                lastName="WOODS"
-                jobTitle="SOFTWARE DEVELOPER"
-                />                
-            </router-link>
+                <h3>KHARI</h3>
+                <h3>WOODS</h3>
+                <h6>Software Developer</h6>
 
+            </router-link>
         </div>
             <router-link to="/">
-                <SideBarLink linkName="Introduction" linkColor="blue"/>
+                <SideBarLink linkName="Introduction"/>
             </router-link>
             
             <router-link to='/experience'>
-                <SideBarLink linkName="Experience" linkColor="green"/>
+                <SideBarLink linkName="Experience"/>
             </router-link>
             
             <router-link to='/projects'>
-                <SideBarLink linkName="Projects" linkColor=""/>
+                <SideBarLink linkName="Projects"/>
             </router-link>
             
             <router-link to='/skills'>
@@ -43,12 +41,10 @@
 
 <script>
 import SideBarLink from './SideBarLink.vue'
-import Logo from './Logo.vue'
 export default {
     name: 'SideNavBar',
     components: {
         SideBarLink,
-        Logo
     }
 }
 </script>

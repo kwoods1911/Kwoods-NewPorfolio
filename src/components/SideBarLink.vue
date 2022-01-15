@@ -1,11 +1,5 @@
 <template>
-    <a :href="href" 
-    v-on="{mouseover: changeTextColor, mouseout: resetTextColor}" 
-    :style="{color:styleObject}"
-
-    >
-        {{linkName}}
-    </a>
+    <a :href="href">{{linkName}}</a>
     <i class="fas fa-times"></i>
 </template>
 
@@ -15,8 +9,10 @@ export default {
     name: 'SideBarLink',
     props: {
         linkName: String,
-        href: String,
-        linkColor: String
+        defaultColor: String,
+        hoverColor:String,
+        mouseOver: Boolean,
+        href: String
 
     },
     data(){
@@ -28,23 +24,6 @@ export default {
                 color: this.color
             }
         } 
-    },
-    computed: {
-        styleObject(){
-            return {
-                '--a-color--hover': this.linkStyle.color,
-            }
-        }
-    },
-    methods:{
-        changeTextColor(){
-            this.color = 'red'
-        },
-
-        resetTextColor(){
-            console.log('testing')
-            this.color = 'black';
-        }
     }
 
 }
@@ -55,7 +34,7 @@ export default {
 .sidebar a {
   display: block;
   color: black;
-  padding: 12px;
+  padding: 16px;
   text-decoration: none;
 }
 
