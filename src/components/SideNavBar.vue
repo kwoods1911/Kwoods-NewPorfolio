@@ -11,7 +11,7 @@
                 />
             </router-link>
         </div>
-            <router-link to="/">
+            <router-link to="/education">
                 <SideBarLink linkName="Education" linkColor="red" imgpath="mortarboard.png"/>
             </router-link>
             

@@ -5,6 +5,7 @@ import Projects from '../views/Projects'
 import Skills from '../views/Skills'
 import ContactMe from '../views/ContactMe'
 import AboutMe from '../views/AboutMe'
+import Education from '../views/Education'
 
 
 const routes = [
@@ -45,6 +46,11 @@ const routes = [
         path: '/about',
         name: 'AboutMe',
         component: AboutMe
+    },
+    {
+        path: '/education',
+        name: 'Education',
+        component:Education
     }
 ]
 
