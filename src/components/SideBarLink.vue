@@ -1,5 +1,9 @@
 <template>
-    <a :href="href">{{linkName}}</a>
+    <a :href="href" v-on="{mouseover: changeTextColor}" :style="{color:color}">
+        
+        {{linkName}}
+    
+    </a>
     <i class="fas fa-times"></i>
 </template>
 
@@ -12,7 +16,8 @@ export default {
         defaultColor: String,
         hoverColor:String,
         mouseOver: Boolean,
-        href: String
+        href: String,
+        linkColor: String
 
     },
 
@@ -20,6 +25,13 @@ export default {
         return {
             color: ''
         } 
+    },
+    
+
+    methods:{
+        changeTextColor(){
+            this.color = this.linkColor
+        }
     }
 
 }
@@ -30,7 +42,7 @@ export default {
 .sidebar a {
   display: block;
   color: black;
-  padding: 16px;
+  padding: 12px;
   text-decoration: none;
 }
 
