@@ -12,18 +12,22 @@ export default {
         defaultColor: String,
         hoverColor:String,
         mouseOver: Boolean,
-        href: String
+        href: String,
+        linkColor: String
 
     },
+
     data(){
         return {
-            color: '',
-            mouseover: null,
-
-            linkStyle: {
-                color: this.color
-            }
+            color: ''
         } 
+    },
+    
+
+    methods:{
+        changeTextColor(){
+            this.color = this.linkColor
+        }
     }
 
 }
@@ -36,10 +40,6 @@ export default {
   color: black;
   padding: 16px;
   text-decoration: none;
-}
-
-a:hover{
-    color: var(--a-color--hover)
 }
 
 </style>
