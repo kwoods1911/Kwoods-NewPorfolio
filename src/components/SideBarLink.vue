@@ -12,8 +12,7 @@ export default {
         defaultColor: String,
         hoverColor:String,
         mouseOver: Boolean,
-        href: String,
-        linkColor: String
+        href: String
 
     },
 
@@ -21,13 +20,6 @@ export default {
         return {
             color: ''
         } 
-    },
-    
-
-    methods:{
-        changeTextColor(){
-            this.color = this.linkColor
-        }
     }
 
 }
