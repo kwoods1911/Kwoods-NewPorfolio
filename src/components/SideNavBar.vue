@@ -3,7 +3,12 @@
 
     <div class="sidebar">
         <div class="sidebar-header">
-            <h3>KW</h3>
+            <router-link to="/">
+                <h3>KHARI</h3>
+                <h3>WOODS</h3>
+                <h6>Software Developer</h6>
+
+            </router-link>
         </div>
             <router-link to="/">
                 <SideBarLink linkName="Introduction"/>

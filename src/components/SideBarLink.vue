@@ -1,8 +1,10 @@
 <template>
     <a :href="href">{{linkName}}</a>
+    <i class="fas fa-times"></i>
 </template>
 
 <script>
+
 export default {
     name: 'SideBarLink',
     props: {
@@ -17,7 +19,7 @@ export default {
     data(){
         return {
             color: ''
-        }
+        } 
     }
 
 }
