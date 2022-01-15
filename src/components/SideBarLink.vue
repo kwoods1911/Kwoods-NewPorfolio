@@ -1,10 +1,10 @@
 <template>
-
-    <div>
-        <img :src="img" alt="">
-    </div>
-    <a :href="href" :style="{color: color}" v-on="{mouseover: changeTextColor, mouseout: resetTextColor}">{{linkName}}</a>
-    <i class="fas fa-times"></i>
+<div class="linkContainer">
+<a :href="href" :style="{color: color}" v-on="{mouseover: changeTextColor, mouseout: resetTextColor}">
+    <img :src="require(`@/assets/${imgpath}`)" alt="">
+    {{linkName}}
+    </a>
+</div>
 </template>
 
 <script>
@@ -20,25 +20,18 @@ export default {
         linkColor: String,
         imgpath: String,
     },
-
     data(){
         return {
             color: '',
-            img: ''
         } 
     },
-    mounted(){
-        this.img = this.imgpath
-        console.log(this.img)
-    },
-
     methods: {
         changeTextColor(){
             this.color = this.linkColor;
         },
 
         resetTextColor(){
-            this.color = 'black'
+            this.color = '#eee'
         }
     }
 
@@ -49,7 +42,7 @@ export default {
 /* Sidebar links */
 .sidebar a {
   display: block;
-  color: black;
+  color: #eee;
   padding: 12px;
   text-decoration: none;
 }
@@ -57,6 +50,16 @@ export default {
 img {
     height:30px;
     width:30px;
+    color: #eee;
+    margin-right: 10px;
+    /* float: left; */
 }
+
+.linkContainer{
+    /* float: left; */
+    
+}
+
+
 
 </style>
