@@ -38,7 +38,7 @@ export default {
 /* Page content. The value of the margin-left property should match the value of the sidebar's width property */
 div.content {
   margin-left: 200px;
-  padding: 1px 16px;
+  padding: 1px 1px;
   height: 1000px;
 }
 

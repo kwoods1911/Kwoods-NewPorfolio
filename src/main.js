@@ -1,5 +1,3 @@
-
-
 import { createApp } from 'vue'
 import 'bootstrap/dist/css/bootstrap.min.css'
 // import 'jquery/src/jquery.js'
