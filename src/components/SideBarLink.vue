@@ -46,19 +46,20 @@ export default {
   padding: 12px;
   text-decoration: none;
 }
+.sidebar a:hover {
+    /* background-color: rgb(66, 145, 132); */
+    /* transition: 0.4s; */
+    /* text-decoration: underline; */
+}
 
 img {
     height:30px;
     width:30px;
     color: #eee;
     margin-right: 10px;
-    /* float: left; */
 }
 
-.linkContainer{
-    /* float: left; */
-    
-}
+
 
 
 
