@@ -1,5 +1,5 @@
 <template>
-        <div class="header">
+        <div class="header" v-if="show">
             <h1>{{title}}</h1>
             <h6>{{subtitle}}</h6>
         </div>
@@ -13,7 +13,18 @@ export default {
         title: String,
         subtitle: String,
         textColor: String,
-    }
+    },
+
+    data(){
+        return{
+            show: false
+        }
+    },
+
+    mounted(){
+        this.show = true;
+        console.log(this.show);
+    },
 }
 </script>
 
@@ -24,6 +35,8 @@ export default {
     position: relative;
     z-index: 2;
     padding-bottom: 10px;
+    /* opacity: 0; */
+/* transition: opacity 0.5s ease-in; */
 }
 
 h1{
