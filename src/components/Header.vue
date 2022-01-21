@@ -23,10 +23,11 @@ export default {
     margin: 0 auto;
     position: relative;
     z-index: 2;
+    padding-bottom: 10px;
 }
 
 h1{
-    padding: 70px 0;
+    /* padding: 70px 0; */
 }
 h1,h6{
     margin: auto auto;
