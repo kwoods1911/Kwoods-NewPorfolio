@@ -25,10 +25,11 @@ export default {
 
 <style scoped>
 .card{
-    margin: 100px auto;
-    width: 80%;
+    margin: 80px auto;
+    width: 50%;
     border-radius: 10px;
     opacity: 0.8;
+    /* border: 3px solid #eee; */
 }
 
 </style>
