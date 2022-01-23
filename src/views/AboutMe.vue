@@ -49,7 +49,6 @@ export default {
 </script>
 
 <style scoped>
-
 #container {
     position:relative;
     background: rgba(8, 178, 227,.5);

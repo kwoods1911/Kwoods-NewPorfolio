@@ -6,10 +6,10 @@
     </div>
 
     <Card 
-    title="College Of The Bahamas"
-    subtitle="August 2012 - April 2015"
-    description="Associates Degree of Architecture"
-    summary="Here I studied architecture and learned about design"
+    title="Amazon Web Services Certified Cloud Practitioner"
+    subtitle="Obtained July 2021"
+    description=""
+    summary="I learned about the basics of cloud computing in AWS"
     />
 
     <Card 
@@ -18,6 +18,14 @@
     description="Computer information systems"
     summary="Here I learned how to design websites"
     />
+
+    <Card 
+    title="College Of The Bahamas"
+    subtitle="August 2012 - April 2015"
+    description="Associates Degree of Architecture"
+    summary="Here I studied architecture and learned about design"
+    />
+
     
 </div>  
 </template>

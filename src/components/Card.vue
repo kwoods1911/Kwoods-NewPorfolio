@@ -29,7 +29,6 @@ export default {
     width: 50%;
     border-radius: 10px;
     opacity: 0.8;
-    /* border: 3px solid #eee; */
 }
 
 </style>
