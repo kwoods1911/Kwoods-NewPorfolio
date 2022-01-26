@@ -22,5 +22,32 @@ Education
 
 
 
+
+
 Education background photo links
 Photo by Pavel Danilyuk from Pexelsign"
+
+Html icon
+<a href="https://www.flaticon.com/free-icons/logo" title="logo icons">Logo icons created by Freepik - Flaticon</a>
+<a href="https://www.flaticon.com/free-icons/logo" title="logo icons">Logo icons created by Freepik - Flaticon</a>
+<a href="https://www.flaticon.com/free-icons/css" title="css icons">Css icons created by Pixel perfect - Flaticon</a>
+
+
+Javascript icon
+<a href="https://www.flaticon.com/free-icons/js" title="js icons">Js icons created by Freepik - Flaticon</a>
+
+Vue.Js
+
+Bootstrap
+<a href="https://www.flaticon.com/free-icons/bootstrap" title="bootstrap icons">Bootstrap icons created by Freepik - Flaticon</a>
+
+Github
+<a href="https://www.flaticon.com/free-icons/github" title="github icons">Github icons created by Freepik - Flaticon</a>
+
+
+PHP
+<a href="https://www.flaticon.com/free-icons/php" title="php icons">Php icons created by Freepik - Flaticon</a>
+
+
+Bootstrap
+<a href="https://www.flaticon.com/free-icons/bootstrap" title="bootstrap icons">Bootstrap icons created by Freepik - Flaticon</a>
