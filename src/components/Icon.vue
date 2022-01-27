@@ -1,6 +1,6 @@
 <template>
     <div>
-        <img :src="require(`@/assets/icons/${imgPath}`)" alt="">
+        <img class="skills-icon shadow p-3 mb-5 bg-white rounded" :src="require(`@/assets/icons/${imgPath}`)" alt="">
         <h5>{{name}}</h5>
     </div>
 </template>
@@ -16,5 +16,12 @@ export default {
 </script>
 
 <style>
+.skills-icon{
+    width: 90px;
+    height: 90px;
+}
 
+h5{
+    color:#fff;
+}
 </style>
