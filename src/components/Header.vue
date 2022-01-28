@@ -31,6 +31,6 @@ h1{
 }
 h1,h6{
     margin: auto auto;
-    color: #eee;
+    color: #fff;
 }
 </style>
