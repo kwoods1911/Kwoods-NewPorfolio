@@ -1,5 +1,5 @@
 <template>
-        <div class="header">
+        <div class="header" :style="{color: textColor}">
             <h1>{{title}}</h1>
             <h6>{{subtitle}}</h6>
         </div>
@@ -31,6 +31,6 @@ h1{
 }
 h1,h6{
     margin: auto auto;
-    color: #fff;
+    /* color: #fff; */
 }
 </style>

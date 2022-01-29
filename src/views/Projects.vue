@@ -1,3 +1,76 @@
 <template>
-    <h1>Projects</h1>
+<div class="container">
+<Header 
+title="Projects"
+textColor="red"
+/>
+
+
+<div class="row">
+    <div class="col-md">
+        <Thumbnail
+        thumbnailHeader="Three G Shipping Company"
+        thumbnailDescription="This was a proposal for a shipping company based in the Bahamas"
+        imgHeight='100px'
+        imgWidth='100px'
+        />
+    </div>
+
+    <div class="col-md">
+        <Thumbnail
+        thumbnailHeader="Timeless Label Generator"
+        thumbnailDescription="This was a proposal for a shipping company based in the Bahamas"
+        imgHeight='100px'
+        imgWidth='100px'
+        />
+    </div>
+</div>
+
+
+<div class="row">
+    <div class="col-md">
+        <Thumbnail
+        thumbnailHeader="Exam Prep App"
+        thumbnailDescription="Exam study app for students"
+        imgHeight='100px'
+        imgWidth='100px'
+        />
+    </div>
+
+    <div class="col-md">
+        <Thumbnail
+        thumbnailHeader="Shopify App"
+        thumbnailDescription="Shopify app for students"
+        imgHeight='100px'
+        imgWidth='100px'
+        />
+    </div>
+</div>
+
+</div>
+
 </template>
+
+
+<script>
+import Header from '../components/Header.vue'
+import Thumbnail from '../components/Thumbnail.vue'
+export default {
+    name: 'Projects',
+    components:{
+        Header,
+        Thumbnail,
+    }
+}
+</script>
+
+
+<style>
+
+.container{
+    background-color:#fefefe;
+    height: 100%;
+}
+
+
+</style>

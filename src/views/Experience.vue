@@ -2,7 +2,7 @@
 <div class="experience-container">
 <Overlay backgroundColor="rgba(240, 93, 35,0.5)"/>
 <div class="experience-header">
-    <Header title="Experience"/>
+    <Header title="Experience" textColor="#eee"/>
 </div>
 
 <Card 
