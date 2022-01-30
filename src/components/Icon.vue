@@ -13,6 +13,10 @@ export default {
         imgPath: String,
         textColor: String,
         divDisplay: String
+    },
+    mounted(){
+        console.log(this.imgPath);
+        console.log(require(`@/assets/icons/${this.imgPath}`))
     }
 }
 </script>
