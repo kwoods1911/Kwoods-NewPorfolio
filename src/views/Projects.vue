@@ -7,7 +7,7 @@ textColor="#2ab5d3"
 
 
 <div class="row">
-    <div class="col-md shadow-sm p-3 mb-5 bg-body rounded">
+    <div class="col-md">
         <Thumbnail
         thumbnailHeader="Three G Shipping Company"
         thumbnailDescription="This was a proposal for a shipping company based in the Bahamas"
@@ -20,10 +20,10 @@ textColor="#2ab5d3"
         />
     </div>
 
-    <div class="col-md shadow-sm p-3 mb-5 bg-body rounded">
+    <div class="col-md">
         <Thumbnail
         thumbnailHeader="Timeless Label Generator"
-        thumbnailDescription="This was a proposal for a shipping company based in the Bahamas"
+        thumbnailDescription="This was a proposal web application for Timeless Medical Systems"
         imgHeight='200px'
         imgWidth='400px'
         headerColor='#eee'
@@ -36,7 +36,7 @@ textColor="#2ab5d3"
 
 
 <div class="row">
-    <div class="col-md shadow-sm p-3 mb-5 bg-body rounded">
+    <div class="col-md">
         <Thumbnail
         thumbnailHeader="Exam Prep App"
         thumbnailDescription="Exam study app for students"
@@ -49,7 +49,7 @@ textColor="#2ab5d3"
         />
     </div>
 <!-- "https://via.placeholder.com/500.JPG" -->
-    <div class="col-md shadow-sm p-3 mb-5 bg-body rounded">
+    <div class="col-md">
         <Thumbnail
         thumbnailHeader="Shopify App"
         thumbnailDescription="Shopify app for students"
@@ -86,10 +86,4 @@ export default {
     background-color:#fefefe;
     height: 100%;
 }
-
-.col-md{
-    padding: 0px;
-}
-
-
 </style>

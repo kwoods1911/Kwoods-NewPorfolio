@@ -40,7 +40,7 @@ export default {
 <style scoped>
 .card{
     background: linear-gradient(-180deg,#57cfb0,#2ab5d3);
-    /* margin: 20px auto; */
+    box-shadow: 0 12px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .card-text p{
@@ -48,7 +48,8 @@ export default {
 }
 
 img{
-    margin: 0 auto;
+    margin: 20px auto;
+    box-shadow: 0 12px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 a{
