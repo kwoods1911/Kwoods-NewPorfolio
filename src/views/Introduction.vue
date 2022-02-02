@@ -4,7 +4,7 @@
     <transition name="fade">
       <Header
         title="Hi I am Khaaaaaari"
-        subtitle="Budding developer with a thirst for knowledge"
+        subtitle="Budding developer with a thirst for knowledgeeeeee"
       />
     </transition>
 
