@@ -3,7 +3,7 @@
   <div id="main">
     <transition name="fade">
       <Header
-        title="Hi I am Khari"
+        title="Hi I am Khaaaaaari"
         subtitle="Budding developer with a thirst for knowledge"
       />
     </transition>
