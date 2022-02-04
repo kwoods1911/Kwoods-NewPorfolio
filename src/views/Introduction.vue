@@ -1,16 +1,27 @@
 <template>
   <!-- content will go here -->
   <div id="main">
-    <transition name="fade">
-      <Header
-        title="Hi I am Khari"
-        subtitle="Budding developer with a thirst for knowledge"
-      />
-    </transition>
-
     <div class="overlay"></div>
+    <div id="header">
+      <Header
+        title="Hi, I am Khari"
+        subtitle="Software Developer with a thirst for knowledge"
+        paddingTop=20%
+        paddingBottom=40px
+        headerOneFontSize=90px
+        headerSixFontSize=20px
+      />
+    </div>
+    
     <router-link to="/projects">
-      <Button title="Projects"/>
+      <Button 
+      title="Projects"
+      borderStyle="1px solid black"
+      borderRadius="5px"
+      padding="5px 20px"
+      btnColor="#fff"
+      btnBackGroundColor="#2ab5d3"
+      />
     </router-link>
   </div>
 </template>
@@ -39,7 +50,6 @@ export default {
   methods: {
     onPageLoad() {
       this.show = false;
-      // console.log('test')
     },
   },
   created() {
@@ -70,9 +80,5 @@ export default {
 
 .fade-enter-active {
   transition: opacity 3s;
-}
-
-button{
-  
 }
 </style>

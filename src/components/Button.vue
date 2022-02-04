@@ -1,5 +1,13 @@
 <template>
-    <button>{{title}}</button>
+    <button :style="{
+        
+        border: borderStyle,
+        borderRadius: borderRadius,
+        padding: padding,
+        color: btnColor,
+        backgroundColor: btnBackGroundColor
+    
+    }" class="btn" >{{title}}</button>
 </template>
 
 <script>
@@ -9,6 +17,14 @@ export default {
         title: String,
         length: String,
         width: String,
+        borderStyle: String,
+        borderRadius: String,
+        padding: String,
+        paddingTop: String,
+        paddingBottom: String,
+        class: String,
+        btnColor: String,
+        btnBackGroundColor: String,
     }
 }
 </script>
@@ -20,9 +36,4 @@ button{
     z-index: 3;
     border: 0px; 
 }
-
-button:hover{
-    background-color: red;
-}
-
 </style>

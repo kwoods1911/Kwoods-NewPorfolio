@@ -1,7 +1,7 @@
 <template>
-        <div class="header" :style="{color: textColor}">
-            <h1>{{title}}</h1>
-            <h6>{{subtitle}}</h6>
+        <div class="header" :style="{color: textColor, paddingTop: paddingTop, paddingBottom: paddingBottom}">
+            <h1 :style="{fontSize: headerOneFontSize}">{{title}}</h1>
+            <h6 :style="{fontSize: headerSixFontSize}">{{subtitle}}</h6>
         </div>
 </template>
 
@@ -13,6 +13,10 @@ export default {
         title: String,
         subtitle: String,
         textColor: String,
+        paddingTop: String,
+        paddingBottom: String,
+        headerOneFontSize: String,
+        headerSixFontSize: String
     }
 }
 </script>
@@ -25,12 +29,7 @@ export default {
     z-index: 2;
     padding-bottom: 10px;
 }
-
-h1{
-    /* padding: 70px 0; */
-}
 h1,h6{
     margin: auto auto;
-    /* color: #fff; */
 }
 </style>
