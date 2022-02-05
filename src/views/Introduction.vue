@@ -2,7 +2,9 @@
   <!-- content will go here -->
   <div id="main">
     <div class="overlay"></div>
-    <div id="header">
+ 
+ <transition name="fade" appear>
+      <div id="header" class="fade-in">
       <Header
         title="Hi, I am Khari"
         subtitle="Software Developer with a thirst for knowledge"
@@ -12,6 +14,7 @@
         headerSixFontSize=20px
       />
     </div>
+ </transition>
     
     <router-link to="/projects">
       <Button 
@@ -43,18 +46,36 @@ export default {
   data() {
     return {
       image: "../assets/images/introimg1.jpg",
-      show: null,
+      show: false,
     };
   },
 
-  methods: {
-    onPageLoad() {
-      this.show = false;
-    },
-  },
   created() {
-    this.onPageLoad();
+    setTimeout(function() {
+      this.show = true;
+      console.log(this.show);
+    },3000);
+    
+    // this.show = true;
   },
+
+  mounted() {
+    setTimeout(function() {
+      this.show = true;
+      let header = document.getElementById('header');
+      header.classList.add('fade-complete');
+
+       },3000);
+    
+  },
+
+  methods: {
+    onPageLoad(){
+      // after 5 seconds run this line of code
+      this.show;
+    }
+  },
+
 };
 </script>
 <!-- Add "scoped" attribute to limit CSS to this component only -->
@@ -77,8 +98,13 @@ export default {
   right: 0;
   left: 0;
 }
+.fade-in{
+opacity: 0;
+transition: opacity 2s ease-in-out;
+}
 
-.fade-enter-active {
-  transition: opacity 3s;
+.fade-complete{
+  /* transform: translateX(20px); */
+  opacity: 1;
 }
 </style>
