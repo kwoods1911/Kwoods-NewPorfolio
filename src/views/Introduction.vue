@@ -7,7 +7,7 @@
       <div id="header" class="fade-in">
       <Header
         title="Hi, I am Khari"
-        subtitle="Software Developer with a thirst for knowledge"
+        subtitle="Software Developer"
         paddingTop=20%
         paddingBottom=40px
         headerOneFontSize=90px
@@ -17,6 +17,7 @@
  </transition>
     
     <router-link to="/projects">
+    <div id="button_container" class="fade-in">
       <Button 
       title="Projects"
       borderStyle="1px solid black"
@@ -25,6 +26,8 @@
       btnColor="#fff"
       btnBackGroundColor="#2ab5d3"
       />
+    </div>
+      
     </router-link>
   </div>
 </template>
@@ -55,17 +58,17 @@ export default {
       this.show = true;
       console.log(this.show);
     },3000);
-    
-    // this.show = true;
   },
 
   mounted() {
     setTimeout(function() {
       this.show = true;
       let header = document.getElementById('header');
+      let button_container = document.getElementById('button_container');
       header.classList.add('fade-complete');
+      button_container.classList.add('fade-complete');
 
-       },3000);
+       },1500);
     
   },
 
@@ -80,6 +83,10 @@ export default {
 </script>
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+#header{
+  text-shadow: 2px 2px #5f5e5e;
+}
+
 #main {
   position: relative;
   text-align: center;
