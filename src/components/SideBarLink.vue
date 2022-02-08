@@ -1,7 +1,7 @@
 <template>
 <div class="linkContainer">
 <a :href="href" :style="{color: color}" v-on="{mouseover: changeTextColor, mouseout: resetTextColor}">
-    <img :src="require(`@/assets/${imgpath}`)" alt="">
+    <img class="icon" :src="require(`@/assets/${imgpath}`)" alt="">
     {{linkName}}
     </a>
 </div>
@@ -25,14 +25,17 @@ export default {
             color: '',
         } 
     },
+
+    mounted(){
+
+    },
     methods: {
         changeTextColor(){
-            this.color = this.linkColor;
-        },
 
+        },
         resetTextColor(){
-            this.color = '#eee'
-        }
+
+        },
     }
 
 }
@@ -46,10 +49,14 @@ export default {
   padding: 12px;
   text-decoration: none;
 }
-.sidebar a:hover {
-    /* background-color: rgb(66, 145, 132); */
-    /* transition: 0.4s; */
-    /* text-decoration: underline; */
+.linkContainer:hover {
+    background-color:#eee;
+    transition: 0.4s;
+    text-decoration: underline;
+}
+
+.linkContainer:hover{
+        color:#60CEB1;
 }
 
 img {
@@ -58,9 +65,5 @@ img {
     color: #eee;
     margin-right: 10px;
 }
-
-
-
-
 
 </style>

@@ -45,26 +45,43 @@ import SideBarLink from './SideBarLink.vue'
 import Logo from './Logo.vue'
 export default {
     name: 'SideNavBar',
+    props:{
+
+    },
+    data(){
+        return{
+
+        }
+
+    },
+    mounted(){
+        let icons = document.getElementsByClassName('linkContainer');
+        console.log(icons);
+        for (let i = 0; i < icons.length; i++){
+            icons[i].addEventListener('mouseover',function(){
+                icons[i].children[0].children[0].style.transform = "rotate(360deg)";
+                icons[i].children[0].children[0].style.transition = "transform 0.8s ease-in";
+            })
+
+             icons[i].addEventListener('mouseout',function(){
+                icons[i].children[0].children[0].style.transform = "rotate(-360deg)";
+                icons[i].children[0].children[0].style.transition = "transform 0.8s ease-in";
+            })
+        }
+    },
     components: {
         SideBarLink,
         Logo
     }
 }
+
 </script>
 
 
 <style scoped>
 
 .sidebar {
-    /* .c-header {
-    padding: 0;
-    background: #2ab5d3;
-    border-radius: 0;
-    background: #2ab5d3;
-    background: -o-linear-gradient(-45deg,#57cfb0,#2ab5d3);
-    background: -o-linear-gradient(135deg,#57cfb0,#2ab5d3); */
     background: linear-gradient(-180deg,#57cfb0,#2ab5d3);
-/* } */
 }
 
 </style>
