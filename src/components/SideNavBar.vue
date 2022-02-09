@@ -1,6 +1,4 @@
 <template>
-
-
     <div class="sidebar">
         <div class="sidebar-header">
             <router-link to="/">
@@ -11,6 +9,7 @@
                 />
             </router-link>
         </div>
+        
             <router-link to="/education">
                 <SideBarLink linkName="Education" linkColor="red" imgpath="mortarboard.png"/>
             </router-link>
@@ -35,7 +34,6 @@
             <router-link to='/about'>
                 <SideBarLink linkName="About Me" linkColor="cyan" imgpath="user.png"/>
             </router-link>
-            
     </div>
 
 </template>
@@ -56,7 +54,6 @@ export default {
     },
     mounted(){
         let icons = document.getElementsByClassName('linkContainer');
-        console.log(icons);
         for (let i = 0; i < icons.length; i++){
             icons[i].addEventListener('mouseover',function(){
                 icons[i].children[0].children[0].style.transform = "rotate(360deg)";
@@ -79,7 +76,6 @@ export default {
 
 
 <style scoped>
-
 .sidebar {
     background: linear-gradient(-180deg,#57cfb0,#2ab5d3);
 }

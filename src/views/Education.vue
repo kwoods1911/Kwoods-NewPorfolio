@@ -5,26 +5,36 @@
         <Header title="Education"/>
     </div>
 
+    <div class="animate__animated animate__backInLeft">
     <Card 
     title="Amazon Web Services Certified Cloud Practitioner"
     subtitle="Obtained July 2021"
     description=""
     summary="I learned about the basics of cloud computing in AWS"
+    textColor="#eee"
     />
+    </div>
 
+    <div class="animate__animated animate__backInRight">
     <Card 
     title="Holland College"
     subtitle="August 2019 - May 2021"
     description="Computer information systems"
     summary="Here I learned how to design websites"
+    textColor="#eee"
     />
+    </div>
 
+<div class="animate__animated animate__backInLeft">
     <Card 
     title="College Of The Bahamas"
     subtitle="August 2012 - April 2015"
     description="Associates Degree of Architecture"
     summary="Here I studied architecture and learned about design"
+    textColor="#eee"
     />
+</div>
+
 
     
 </div>  
@@ -50,9 +60,9 @@ export default {
     position: relative;
     height: 100%;
     width: 100%;
-    background-image: url('../assets/images/1_educationbackground(1).jpg');
-    background-size: cover;
-    background-position: center;
+    /* background-image: url('../assets/images/1_educationbackground(1).jpg'); */
+    /* background-size: cover; */
+    /* background-position: center; */
     
 }
 
@@ -60,6 +70,10 @@ export default {
     margin: 0 auto;
     text-align: center;
     padding-top: 40px;
+}
+
+.animate_animated.animate__backInLeft{
+      --animate-duration: 2s;
 }
 
 </style>

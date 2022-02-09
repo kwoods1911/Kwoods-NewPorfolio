@@ -1,6 +1,6 @@
 <template>
         <div class="header" :style="{color: textColor, paddingTop: paddingTop, paddingBottom: paddingBottom}">
-            <h1 :style="{fontSize: headerOneFontSize}">{{title}}</h1>
+            <h1 class="animate__animated animate__bounce" :style="{fontSize: headerOneFontSize}">{{title}}</h1>
             <h6 :style="{fontSize: headerSixFontSize}">{{subtitle}}</h6>
         </div>
 </template>

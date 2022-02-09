@@ -1,5 +1,5 @@
 <template>
-<div class="card">
+<div class="card" :style="{color: textColor}">
     <div class="card-body">
         <h3 class="card-title">{{title}}</h3>
         <h6>{{subtitle}}</h6>
@@ -17,6 +17,7 @@ export default {
         subtitle: String,
         description: String,
         summary: String,
+        textColor: String
     }
     
 }
@@ -28,7 +29,8 @@ export default {
     margin: 80px auto;
     width: 50%;
     border-radius: 10px;
-    opacity: 0.8;
+    /* opacity: 0.8; */
+    background: linear-gradient(-180deg,#57cfb0,#2ab5d3);
 }
 
 </style>
