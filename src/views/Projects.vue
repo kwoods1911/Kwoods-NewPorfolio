@@ -7,7 +7,7 @@ textColor="#2ab5d3"
 
 
 <div class="row">
-    <div class="col-md">
+    <div class="col-md animate__animated animate__backInDown">
         <Thumbnail
         thumbnailHeader="Three G Shipping Company"
         thumbnailDescription="This was a proposal for a shipping company based in the Bahamas"
@@ -20,7 +20,7 @@ textColor="#2ab5d3"
         />
     </div>
 
-    <div class="col-md">
+    <div class="col-md animate__animated animate__backInDown">
         <Thumbnail
         thumbnailHeader="Timeless Label Generator"
         thumbnailDescription="This was a proposal web application for Timeless Medical Systems"
@@ -36,7 +36,7 @@ textColor="#2ab5d3"
 
 
 <div class="row">
-    <div class="col-md">
+    <div class="col-md animate__animated animate__backInUp">
         <Thumbnail
         thumbnailHeader="Exam Prep App"
         thumbnailDescription="Exam study app for students"
@@ -49,7 +49,7 @@ textColor="#2ab5d3"
         />
     </div>
 <!-- "https://via.placeholder.com/500.JPG" -->
-    <div class="col-md">
+    <div class="col-md animate__animated animate__backInUp">
         <Thumbnail
         thumbnailHeader="Shopify App"
         thumbnailDescription="Shopify app for students"
