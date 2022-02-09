@@ -2,7 +2,9 @@
 <div id="education-background">
     <Overlay backgroundColor="rgba(112, 190, 81,0.5)"/>
     <div id="education-header-style">
-        <Header title="Education"/>
+        <Header title="Education"
+        
+        />
     </div>
 
     <div class="animate__animated animate__backInLeft">
@@ -60,9 +62,9 @@ export default {
     position: relative;
     height: 100%;
     width: 100%;
-    /* background-image: url('../assets/images/1_educationbackground(1).jpg'); */
-    /* background-size: cover; */
-    /* background-position: center; */
+    background-image: url('../assets/images/1_educationbackground(1).jpg'); 
+    background-size: cover;
+    background-position: center;
     
 }
 

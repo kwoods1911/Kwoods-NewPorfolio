@@ -1,7 +1,9 @@
 <template>
 <div class="skills-body">
 <div class="container">
-    <Header title="Skills"/>
+    <Header title="Skills"
+    textColor="#2ab5d3"
+    />
 
 <div class="card shadow-lg p-3 mb-5 rounded" style="background-color: #61CEB0;">
     <h1 class="header">Front End</h1>

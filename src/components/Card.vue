@@ -29,8 +29,10 @@ export default {
     margin: 80px auto;
     width: 50%;
     border-radius: 10px;
-    /* opacity: 0.8; */
+    border: 1px solid #eee;
     background: linear-gradient(-180deg,#57cfb0,#2ab5d3);
+        box-shadow: 0 12px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
 }
 
 </style>
