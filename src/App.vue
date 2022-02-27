@@ -13,8 +13,15 @@ export default {
   name: 'App',
   components: {
     SideNavBar,
-  }
+  },
+
+created(){
+  console.log('route',this.$route.path)
+  this.$router.replace(this.$route.query.redirect || '/')
 }
+}
+
+
 </script>
 
 <style>

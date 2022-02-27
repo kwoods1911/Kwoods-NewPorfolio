@@ -3,7 +3,7 @@
 <div class="contact-background">
 <Header title="Contact Me"/>
 
-<div class="card">
+<div class="card animate__animated animate__zoomIn">
             <a href="khariwoods3@gmail.com">
                     <Icon display="inline-block" textColor="#949696" imgPath="gmail.png"/>
                     khariwoods3@gmail.com 

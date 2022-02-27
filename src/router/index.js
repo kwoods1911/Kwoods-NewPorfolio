@@ -15,33 +15,27 @@ const routes = [
         name: 'Introduction',
         component: Introduction
     },
-
     {
         path: '/experience',
         name: 'Experience',
         component: Experience
     
     },
-
-  
     {
         path:'/projects',
         name: 'Projects',
         component: Projects
     },
-
     {
         path: '/skills',
         name: 'Skills',
         component: Skills
     },
-
     {
         path: '/contact',
         name: 'ContactMe',
         component: ContactMe
     },
-
     {
         path: '/about',
         name: 'AboutMe',

@@ -9,7 +9,7 @@
     <img class="img-thumbnail rounded-circle" src="../assets/images/3_aboutmeprofile.jpeg" alt="picture of me"/>
 
 <div class="overlay"></div>
-    <div class="card">
+    <div class="card animate__animated animate__zoomIn">
         <div class="card-body">
             <p>I've always considered myself a creative indivual. 
             I have an appreciation for asthetically pleasing design and well thoughtout user experiences.
@@ -61,8 +61,8 @@ export default {
 .img-thumbnail {
 position: relative;
 z-index: 2;
- height: 150px;
- width: 150px;
+ height: 250px;
+ width: 250px;
  margin-bottom: 50px;
 }
 
@@ -84,7 +84,6 @@ z-index: 2;
     width: 90%;
     margin: 0 auto;
     border-radius: 4px;
-    
     min-height: 300px;
 }
 </style>
