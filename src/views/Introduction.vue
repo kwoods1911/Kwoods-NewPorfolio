@@ -3,8 +3,8 @@
   <div id="main">
     <div class="overlay"></div>
  
- <transition name="fade" appear>
-      <div id="header" class="fade-in">
+
+      <div id="header">
       <Header
         title="Hi, I am Khari"
         subtitle="Software Developer"
@@ -14,10 +14,10 @@
         headerSixFontSize=20px
       />
     </div>
- </transition>
+ 
     
     <router-link to="/projects">
-    <div id="button_container" class="fade-in">
+    <div id="button_container">
       <Button 
       title="Projects"
       borderStyle="1px solid black"
@@ -54,29 +54,15 @@ export default {
   },
 
   created() {
-    setTimeout(function() {
-      this.show = true;
-      console.log(this.show);
-    },3000);
+ 
   },
 
   mounted() {
-    setTimeout(function() {
-      this.show = true;
-      let header = document.getElementById('header');
-      let button_container = document.getElementById('button_container');
-      header.classList.add('fade-complete');
-      button_container.classList.add('fade-complete');
 
-       },1500);
-    
   },
 
   methods: {
-    onPageLoad(){
-      // after 5 seconds run this line of code
-      this.show;
-    }
+ 
   },
 
 };

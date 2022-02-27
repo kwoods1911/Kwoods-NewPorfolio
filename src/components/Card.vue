@@ -26,12 +26,12 @@ export default {
 
 <style scoped>
 .card{
-    margin: 80px auto;
+    margin: 50px auto;
     width: 50%;
     border-radius: 10px;
     border: 1px solid #eee;
     background: linear-gradient(-180deg,#57cfb0,#2ab5d3);
-        box-shadow: 0 12px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    box-shadow: 0 12px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 
 }
 
