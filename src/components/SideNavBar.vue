@@ -34,8 +34,9 @@
             <router-link to='/about'>
                 <SideBarLink linkName="About Me" linkColor="cyan" imgpath="user.png"/>
             </router-link>
-    </div>
 
+
+    </div>
 </template>
 
 <script>
@@ -79,5 +80,6 @@ export default {
 .sidebar {
     background: linear-gradient(-180deg,#57cfb0,#2ab5d3);
 }
+
 
 </style>

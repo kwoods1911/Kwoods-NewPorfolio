@@ -1,4 +1,5 @@
 <template>
+<ResponsiveNavBar/>
 <SideNavBar/>
 <div class="content">
 <router-view></router-view>
@@ -8,16 +9,25 @@
 
 <script>
 import SideNavBar from './components/SideNavBar.vue'
+import ResponsiveNavBar from './components/ResponsiveNavBar.vue'
 
 export default {
   name: 'App',
   components: {
     SideNavBar,
+    ResponsiveNavBar
   },
-
 created(){
-  console.log('route',this.$route.path)
   this.$router.replace(this.$route.query.redirect || '/')
+  if (performance.navigation.type == performance.navigation.TYPE_RELOAD) {
+  console.info( "This page is reloaded" );
+  console.log('route',this.$route.path)
+  // store current route path in session variable then redirect to that same path.
+  sessionStorage.setItem('currentRoute',this.$route.path)
+
+} else {
+  console.info( "This page is not reloaded");
+}
 }
 }
 
@@ -55,9 +65,19 @@ div.content {
     width: 100%;
     height: auto;
     position: relative;
+    display:none;
   }
   .sidebar a {float: left;}
   div.content {margin-left: 0;}
+  
+.linkContainer{
+  display: none;  
+}
+
+#responsive{
+  display: block;
+}
+
 }
 
 /* On screens that are less than 400px, display the bar vertically, instead of horizontally */
@@ -65,6 +85,10 @@ div.content {
   .sidebar a {
     text-align: center;
     float: none;
+  }
+
+  #responsive{
+    display: none;
   }
 }
 </style>
