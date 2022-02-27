@@ -77,7 +77,7 @@ div.content {
 }
 
 /* On screens that are less than 400px, display the bar vertically, instead of horizontally */
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 312px) {
   .sidebar a {
     text-align: center;
     float: none;
@@ -87,4 +87,6 @@ div.content {
     display: none;
   }
 }
+
+
 </style>

@@ -1,5 +1,5 @@
 <template>
-<div class="card" style="width: 30em;">
+<div class="card">
     <img :src="require(`@/assets/thumbnails/${imgPath}`)" alt="" class="card-img-top" :style="{height: imgHeight, width: imgWidth}">
     <div class="card-title" >
         <h5 :style="{color: headerColor}">
@@ -41,6 +41,7 @@ export default {
 .card{
     background: linear-gradient(-180deg,#57cfb0,#2ab5d3);
     box-shadow: 0 12px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    width: 100%;
 }
 
 .card-text p{
@@ -50,6 +51,10 @@ export default {
 img{
     margin: 20px auto;
     box-shadow: 0 12px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.card-img-top{
+    max-width: 300px;
 }
 
 a{
