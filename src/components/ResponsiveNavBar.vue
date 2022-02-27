@@ -3,12 +3,6 @@
 <div id="responsive" class="topnav">
   <a href="#home" class="active">KW Software Developer</a>
   <div id="myLinks">
-    <!-- <a href="#news">News</a>
-    <a href="#contact">Contact</a>
-    <a href="#about">About</a> -->
-
-
-
          <router-link to="/education">
                 <SideBarLink linkName="Education" linkColor="red" imgpath="mortarboard.png"/>
             </router-link>
@@ -36,8 +30,8 @@
 
   </div>
   <a class="icon" v-on:click="myFunction">
-    <i class="navbar-toggler-icon"></i>
-  </a>
+    <img class="icon" src="../assets/icons/hamburgermenu.png" alt="">
+  </a>  
 </div>
 </template>
 
@@ -50,7 +44,7 @@ export default {
         SideBarLink,
     },
 
-    methods: {
+methods: {
  myFunction() {
   var x = document.getElementById("myLinks");
   if (x.style.display === "block") {
@@ -61,9 +55,6 @@ export default {
 }
     }
 }
-
-
-
 </script>
 
 
@@ -91,15 +82,24 @@ export default {
 }
 
 .topnav a.icon {
-  background: white;
+  /* background: white; */
   display: block;
   position: absolute;
   right: 0;
   top: 0;
 }
 
+.topnav a.icon:hover{
+  cursor: pointer;
+}
+
+.icon i {
+  height: 15px;
+  width: 15px;
+}
+
 #myLinks a:hover {
-  background-color: #ddd;
-  color: black;
+  background-color: #eee;
+  color: #57cfb0;
 }
 </style>

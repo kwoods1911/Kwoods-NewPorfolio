@@ -70,10 +70,6 @@ div.content {
   .sidebar a {float: left;}
   div.content {margin-left: 0;}
   
-.linkContainer{
-  display: none;  
-}
-
 #responsive{
   display: block;
 }

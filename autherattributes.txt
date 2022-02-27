@@ -58,3 +58,7 @@ Mail icon
 
 Linkedin
 <a href="https://www.flaticon.com/free-icons/linkedin" title="linkedin icons">Linkedin icons created by Freepik - Flaticon</a>
+
+
+Hamburger Menu Icon
+<a href="https://www.flaticon.com/free-icons/hamburger" title="hamburger icons">Hamburger icons created by feen - Flaticon</a>
