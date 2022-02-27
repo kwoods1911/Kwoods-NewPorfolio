@@ -1,7 +1,10 @@
 <template>
 <!-- Top Navigation Menu -->
 <div id="responsive" class="topnav">
-  <a href="#home" class="active">KW Software Developer</a>
+  <router-link to="/">
+    <a href="#" class="active">KW Software Developer</a>
+  </router-link>
+  
   <div id="myLinks">
          <router-link to="/education">
                 <SideBarLink linkName="Education" linkColor="red" imgpath="mortarboard.png"/>
