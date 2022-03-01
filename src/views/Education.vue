@@ -2,8 +2,7 @@
 <div id="education-background">
     <Overlay backgroundColor="rgba(112, 190, 81,0.5)"/>
     <div id="education-header-style">
-        <Header title="Education"
-        
+        <Header title="Education"        
         />
     </div>
 
@@ -12,7 +11,8 @@
     title="Amazon Web Services Certified Cloud Practitioner"
     subtitle="Obtained July 2021"
     description=""
-    summary="I learned about the basics of cloud computing in AWS"
+    summary="Certification proves my foundational knowledge of the AWS Cloud Platform. 
+    The goal of obtaining this certification is to validate my understanding of the AWS services that are provided."
     textColor="#eee"
     />
     </div>
@@ -21,8 +21,9 @@
     <Card 
     title="Holland College"
     subtitle="August 2019 - May 2021"
-    description="Computer information systems"
-    summary="Here I learned how to design websites"
+    description="Computer Information Systems"
+    summary="Educated on various methods of designing, developing and maintaining web, mobile and desktop applications. 
+    The course focused on mainly web technologies."
     textColor="#eee"
     />
     </div>
@@ -32,7 +33,9 @@
     title="College Of The Bahamas"
     subtitle="August 2012 - April 2015"
     description="Associates Degree of Architecture"
-    summary="Here I studied architecture and learned about design"
+    summary="During my time at the College of the Bahamas, I learned the basics of architectural design principals for residential buildings. Some of the
+    design principles I learned includd color theory, symmetry and asymmetry. I believe that some of these principles can still be applied in my work today.
+    "
     textColor="#eee"
     />
 </div>

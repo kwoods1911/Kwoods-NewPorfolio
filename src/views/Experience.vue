@@ -10,8 +10,8 @@
 <Card 
 title="Timeless Medical Systems"
 subtitle="July 2020 - Present"
-description="Intermmediate Developer"
-summary="Started out as an intern and worked my way up to being an intermediate developer"
+description="Junior Developer"
+summary="My responsibilities includes designing and developing features for the companies enterprise software. Daily activities also include fixing issue with legacy code."
 textColor="#eee"
 />
 </div>
