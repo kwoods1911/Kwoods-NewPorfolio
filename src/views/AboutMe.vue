@@ -11,19 +11,17 @@
 <div class="overlay"></div>
     <div class="card animate__animated animate__zoomIn">
         <div class="card-body">
-            <p>I've always considered myself a creative indivual. 
-            I have an appreciation for asthetically pleasing design and well thoughtout user experiences.
-            I enjoy creative problem solving.
-            <br>
-            I was born and raised onn the beautiful island of the Bahamas.
-            My life has had a several twist and turns. I have a background in architecture.
-            I spent several years working professionally as a draftsman until I found my passion for software development, while googling opputunities to work remotely.
-            <br>
-            As a professional web developer I have enjoy the challenge of solving real world problems.  I love building applications that tackle business problems.
-            I love finding creative solutions to problems.
-            I enjoy being part of a team that makes an impact on the world.
-            <br>
-            I love learning about new technologies and working on projects that force me to grow my skills.
+            <p>
+                I have always considered myself to be a creative individual. I enjoy working on every aspect of web applications. 
+                <br>
+                From designing the user interface to implementing logic on the backend.
+My professional career has taken a bit of a twist and turn. I originally went to school to study architecture in the Bahamas. After graduation, I spent 3 years working as a draftsman for a reputable engineering firm called Graphite Engineering.
+Over time I began searching for career options that will allow me to work remotely. During my research, I saw that many digital nomads chose web development as a career. This led on a path to become a self-taught developer.
+After studying on my own for several years I realized that formal education would be very beneficial to me. I made the leap of faith and left my home country and moved to Canada to study Computer Information Systems at Holland College. I thoroughly enjoyed my time at Holland College. During my time there I learned various web development technologies. During my time there I was able to secure an internship which eventually transitioned into my first full-time position.
+<br>
+Learning is a lifelong process so even though I have completed my formal education I still keep my skills sharp and up to date by working on side projects. 
+My current focus is learning about cloud technologies, specifically AWS I am also venturing into Shopify theme and app development.
+I am always working on a project I do not like to be idle. If you are interested working together you can contact via khariwoods3@gmail.com.
             </p>
         </div>
     </div>
@@ -85,5 +83,9 @@ z-index: 2;
     margin: 0 auto;
     border-radius: 4px;
     min-height: 300px;
+}
+
+p{
+    text-align: left;
 }
 </style>
